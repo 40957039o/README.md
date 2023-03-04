@@ -23,5 +23,5 @@
 # 課程筆記區
 
 # 作業連結區
-
+[作業二](https://github.com/40957039o/README.md/blob/main/t2.py)
 # 專題連結區
