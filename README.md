@@ -23,5 +23,6 @@
 # 課程筆記區
 
 # 作業連結區
-[作業二](https://github.com/40957039o/README.md/blob/main/t2.py)
+[練習一](https://github.com/40957039o/README.md/blob/main/t2.py)
+[作業一](https://github.com/40957039o/README.md/blob/main/%E4%BD%9C%E6%A5%AD%E4%B8%80.py)
 # 專題連結區
