@@ -1,0 +1,57 @@
+def get_key1(val):
+    for key,value in dict1.items():
+        if val == value:
+            return key
+def get_key2(val):
+    for key,value in dict2.items():
+        if val == value:
+            return key
+def question(ans1,ans2,ans3,q):
+    if ans1=='早':
+       q+=4
+    elif ans1=='午':
+       q+=8
+    elif ans1=='晚':
+       q+=12
+    if ans2=='遠':
+       q+=1
+    elif ans2=='近':
+       q-=1
+    if ans3=='高':
+       q-=1
+    elif ans3=='低':
+       q-=2
+    return ans1,ans2,ans3,q
+def adder(a,r):
+    import random
+    r=random.randint(a3-2,a3)
+    return a,r
+def check(a,b):
+    list1.append(a)
+    list2=set(list1)
+    if len(list2)==len(list1):
+       b+=0
+    else:
+       b+=1
+    return a,b
+dict1={'永和豆漿':1,'星巴克':2,'軟實力早餐店':3,'餵我早午餐':4,'八方雲集':5,'創意麵':6,'天天利':7,'凱恩斯岩燒牛排':8,'JnF義式餐廳':9,'鼎泰豐':10,'師大夜市':11,'兄弟飯店':12}
+dict2={'燒餅+豆漿':1,'蛋餅+紅茶':2,'饅頭+蛋':3,'三明治+星冰樂':4,'蛋糕+熱美式':5,'沙拉+熱拿鐵':6,'蛋餅+奶茶':7,'炸湯圓+豆漿':8,'飯糰+紅茶':9,'酪梨大早餐':10,'招牌餵我大早餐':11,'經典美式大早餐':12,'招牌鍋貼+酸辣湯':13,'辣味估貼+豆漿':14,'咖哩水餃+玉米濃湯':15,'墨西哥雞肉麵':16,'青醬奶油雙菇麵':17,'咖哩奶油鮮蔬麵':18,'滷肉飯+燙青菜':19,'蘿蔔糕+蛋':20,'蚵仔煎+魚丸湯':21,'澳洲穀飼牛肋眼':22,'美國頂級牛丹佛':23,'澳洲和牛':24,'青醬燻雞野薰義大利麵':25,'經典義士肉醬麵':26,'白酒蛤蜊義大利麵':27,'鮮蝦肉絲炒飯':28,'排骨蛋炒飯':29,'小籠湯包+酸辣湯':30,'師園鹹酥雞':31,'許記生煎包':32,'燈籠滷味':33,'蝶花廳':34,'梅花廳':35,'菊花廳':36}
+list1=[]
+list2=[]
+while True:
+    z=0#餐廳
+    y=0#餐點
+    x=0#迴圈
+    a=str(input('想吃早餐、午餐還是晚餐？請輸入『早』或『午』或『晚』:'))
+    b=str(input('想距離學校遠還近？請輸入『遠』或『近』:'))
+    c=str(input('想要吃價格高還低？請輸入『高』或『低』:'))
+    a,b,c,z=question(a,b,c,z)
+    z,y=adder(z,y)
+    print(get_key1(z))
+    print(get_key2(y))
+    y,x=check(y,x)
+    if x==1:
+        print('哎呀 已經連續吃到一樣的餐點了，要不要換個地方')
+        break 
+    if x==0:
+        continue
