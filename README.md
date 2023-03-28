@@ -26,4 +26,6 @@
 [練習一](https://github.com/40957039o/README.md/blob/main/t2.py)
 
 [作業一](https://github.com/40957039o/README.md/blob/main/%E4%BD%9C%E6%A5%AD%E4%B8%80.py)
+
+[作業二](https://github.com/40957039o/README.md/blob/main/1%20copy%206.py)
 # 專題連結區
